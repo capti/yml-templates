@@ -1,2 +1,2 @@
-# yml-tempaltes
+# yml-templates
 Различные шаблоны для Issues, Pull Requests
