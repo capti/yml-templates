@@ -1,0 +1,55 @@
+name: "Запрос новой функции"
+description: "Предложите идею"
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что нашли время предложить новую функцию!
+        Пожалуйста, заполните разделы ниже, чтобы помочь нам понять вашу идею.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Описание проблемы"
+      description: "Чёткое и краткое описание проблемы, которую решит эта функция."
+      placeholder: "Пример: Меня всегда раздражает, когда [...]"
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Предлагаемое решение"
+      description: "Чёткое и краткое описание того, что вы хотите, чтобы произошло."
+    validations:
+      required: true
+
+  - type: textarea
+    id: altsolution
+    attributes:
+      label: "Альтернативные решения"
+      description: "Чёткое и краткое описание любых альтернативных решений или функций, которые вы рассматривали."
+      validations:
+        required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Дополнительный контекст"
+      description: "Добавьте сюда любой другой контекст, скриншоты или примеры, касающиеся запроса функции."
+      validations:
+        required: true
+
+  - type: dropdown
+    id: simplicity
+    attributes:
+      label: "Эта функция простая?"
+      options:
+        - label: "Да"
+          value: "yes"
+        - label: "Нет"
+          value: "no"
+      validations:
+        required: true
