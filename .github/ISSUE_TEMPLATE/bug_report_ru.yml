@@ -1,0 +1,70 @@
+name: "Баг-репорт"
+description: Создайте отчёт, чтобы помочь нам
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Описание ошибки"
+      description: "Подробное описание ошибки"
+      placeholder: |
+        Пример:
+        Чёткое и краткое описание того, в чём заключается ошибка.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: "Шаги для воспроизведения"
+      description: "Последовательность действий для воспроизведения ошибки"
+      placeholder: |
+        Пример:
+        1. Перейдите в '...'
+        2. Нажмите на '....'
+        3. Прокрутите вниз до '....'
+        4. Увидите ошибку
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_result
+    attributes:
+      label: "Ожидаемое поведение"
+      description: "Чёткое и краткое описание того, что вы ожидали увидеть."
+      placeholder: "Пример: Поведение остаётся таким же, как и раньше"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_result
+    attributes:
+      label: "Фактический результат"
+      placeholder: "Пример: Поведение изменилось '...'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Скриншоты"
+      description: "Если применимо, добавьте скриншоты, чтобы помочь объяснить вашу проблему."
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Окружение"
+      placeholder: |
+        Пример:
+        - Метод развёртывания: [например, Docker, Kubernetes и т.д.]
+        - Браузер: [например, Chrome 120, Firefox 119]
+        - ОС: [например, Windows 11, macOS Sonoma, Ubuntu 22.04]
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Дополнительная информация"
+      description: "Добавьте сюда любую другую информацию о проблеме."
