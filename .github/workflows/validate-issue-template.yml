@@ -1,0 +1,17 @@
+name: Validate Issue Templates
+
+on:
+  push:
+    paths: [".github/ISSUE_TEMPLATE/**"]
+  pull_request:
+    paths: [".github/ISSUE_TEMPLATE/**"]
+
+jobs:
+  lintAllTheThings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: yaml-lint
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          config_file: .yamllint.yml
