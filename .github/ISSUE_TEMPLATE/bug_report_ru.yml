@@ -1,6 +1,6 @@
 name: "Баг-репорт"
 description: Создайте отчёт, чтобы помочь нам
-title: "[Bug]: "
+title: "[bug]: "
 labels: ["bug"]
 body:
   - type: textarea
