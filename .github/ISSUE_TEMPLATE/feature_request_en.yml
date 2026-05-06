@@ -1,6 +1,6 @@
 name: "Feature request"
 description: "Suggest an idea for Kaneo"
-title: "feat: "
+title: "[feat]: "
 labels: ["enhancement"]
 body:
   - type: markdown
@@ -51,5 +51,5 @@ body:
           value: "yes"
         - label: "Нет"
           value: "no"
-      validations:
-        required: true
+    validations:
+      required: true
