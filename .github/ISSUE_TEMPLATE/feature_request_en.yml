@@ -47,7 +47,7 @@ body:
     attributes:
       label: "Эта функция простая?"
       options:
-        - "Да"
-        - "Нет"
+        - "Yes"
+        - "No"
     validations:
       required: true
