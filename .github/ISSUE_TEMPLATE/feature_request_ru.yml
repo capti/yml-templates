@@ -1,6 +1,6 @@
 name: "Запрос новой функции"
 description: "Предложите идею"
-title: "feat: "
+title: "[feat]: "
 labels: ["enhancement"]
 body:
   - type: markdown
@@ -31,16 +31,16 @@ body:
     attributes:
       label: "Альтернативные решения"
       description: "Чёткое и краткое описание любых альтернативных решений или функций, которые вы рассматривали."
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: context
     attributes:
       label: "Дополнительный контекст"
       description: "Добавьте сюда любой другой контекст, скриншоты или примеры, касающиеся запроса функции."
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: dropdown
     id: simplicity
@@ -51,5 +51,5 @@ body:
           value: "yes"
         - label: "Нет"
           value: "no"
-      validations:
-        required: true
+    validations:
+      required: true
