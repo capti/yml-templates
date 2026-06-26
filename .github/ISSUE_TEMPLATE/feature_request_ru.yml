@@ -39,8 +39,6 @@ body:
     attributes:
       label: "Дополнительный контекст"
       description: "Добавьте сюда любой другой контекст, скриншоты или примеры, касающиеся запроса функции."
-    validations:
-      required: true
 
   - type: dropdown
     id: simplicity
