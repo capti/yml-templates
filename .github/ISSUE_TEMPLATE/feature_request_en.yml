@@ -1,5 +1,5 @@
 name: "Feature request"
-description: "Suggest an idea for Kaneo"
+description: "Suggest an idea"
 title: "[feat]: "
 labels: ["enhancement"]
 body:
@@ -45,7 +45,7 @@ body:
   - type: dropdown
     id: simplicity
     attributes:
-      label: "Эта функция простая?"
+      label: "This feature is simple?"
       options:
         - "Yes"
         - "No"
